@@ -1,7 +1,7 @@
 .container-small {
     display: flex;
     margin: auto;
-    max-width: 1500px;
+    max-width: 1200px;
     align-items: center;
     justify-content: space-between;
     width: 90%;
@@ -22,7 +22,7 @@ header {
     white-space: nowrap;
 
     h1 {
-        color: $yellow-1;
+        color: $white;
         letter-spacing: 7px;
         font-size: 1.8rem;
 

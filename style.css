@@ -1,7 +1,7 @@
 .container-small {
   display: flex;
   margin: auto;
-  max-width: 1500px;
+  max-width: 1200px;
   align-items: center;
   justify-content: space-between;
   width: 90%; }
@@ -17,7 +17,7 @@ header {
   padding-left: 0px;
   white-space: nowrap; }
   .logo h1 {
-    color: #ffc833;
+    color: #fff;
     letter-spacing: 7px;
     font-size: 1.8rem; }
     @media (max-width: 768px) {
@@ -177,9 +177,21 @@ header {
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  background: #6c00ff;
   border-radius: 12px;
-  padding: 30px; }
+  padding: 30px;
+  text-align: center;
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
+  /* opera 11.10+ */
+  background: -o-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee82ee', endColorstr='#6C00FF', GradientType=0 );
+  /* ie 10+ */
+  background: -ms-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
+  /* global 94%+ browsers support */
+  background: linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%); }
 
 .hero__title {
   color: #fbc651;
