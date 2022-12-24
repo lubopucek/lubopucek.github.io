@@ -1,0 +1,227 @@
+.container-small {
+  display: flex;
+  margin: auto;
+  max-width: 1500px;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%; }
+
+header {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 2px #fbc651 solid;
+  margin-bottom: 50px; }
+
+.logo {
+  padding-left: 0px;
+  white-space: nowrap; }
+  .logo h1 {
+    color: #ffc833;
+    letter-spacing: 7px;
+    font-size: 1.8rem; }
+    @media (max-width: 768px) {
+      .logo h1 {
+        letter-spacing: 5px;
+        font-size: 1.2rem; } }
+  .logo span {
+    color: #fff;
+    letter-spacing: 5px;
+    font-weight: 500; }
+    @media (max-width: 768px) {
+      .logo span {
+        letter-spacing: 4px;
+        font-size: 0.8rem; } }
+
+.menu {
+  list-style: none;
+  display: flex;
+  padding-right: 0px; }
+
+.menu > .menu-item {
+  display: inline-block;
+  position: relative;
+  margin-left: 35px; }
+
+.menu > .menu-item > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #fff; }
+
+.menu > .menu-item > a:hover {
+  color: #fbc651; }
+
+.open-nav-menu {
+  display: none;
+  height: 34px;
+  width: 40px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+
+.open-nav-menu span {
+  position: relative;
+  display: block;
+  height: 3px;
+  width: 29px;
+  background-color: #fff;
+  transition: all 0.3s ease; }
+
+.open-nav-menu span:hover {
+  background: #fbc651; }
+
+.open-nav-menu span:before,
+.open-nav-menu span:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  transition: all 0.3s ease; }
+
+.open-nav-menu span:before {
+  top: -10px; }
+
+.open-nav-menu span:after {
+  top: 10px; }
+
+.open-nav-menu span:hover:before,
+.open-nav-menu span:hover:after {
+  background: #fbc651; }
+
+.close-nav-menu {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: none;
+  margin-left: 42px; }
+
+.close-icon {
+  margin-left: 17px;
+  margin-top: 2px; }
+
+.close-icon:before, .close-icon:after {
+  position: absolute;
+  content: ' ';
+  height: 35px;
+  width: 4px;
+  background: #6c00ff;
+  transition: all 0.3s ease; }
+
+.close-icon:before {
+  transform: rotate(45deg); }
+
+.close-icon:after {
+  transform: rotate(-45deg); }
+
+.close-icon:hover:before, .close-icon:hover:after {
+  background: #fff; }
+
+.menu-overlay {
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease; }
+
+.menu-overlay.active {
+  visibility: visible;
+  opacity: 1; }
+
+@media (max-width: 992px) {
+  .nav-menu {
+    display: block;
+    position: fixed;
+    right: -280px;
+    visibility: hidden;
+    width: 280px;
+    top: 0;
+    overflow-y: auto;
+    z-index: 1000;
+    padding: 15px 0;
+    background-color: #fbc651;
+    transition: all 0.3s ease; }
+
+  .nav-menu.open {
+    visibility: visible;
+    right: 0; }
+
+  .menu {
+    display: block; }
+
+  .menu > .menu-item {
+    display: block;
+    padding: 7px;
+    margin: 0; }
+
+  .menu > .menu-item > a {
+    color: #6c00ff; }
+
+  .menu > .menu-item > a:hover {
+    color: #fff; }
+
+  .open-nav-menu,
+  .close-nav-menu {
+    display: flex; } }
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background: #6c00ff;
+  border-radius: 12px;
+  padding: 30px; }
+
+.hero__title {
+  color: #fbc651;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px; }
+
+p {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1.5px; }
+
+.content h1 {
+  font-size: 2rem;
+  letter-spacing: 2px; }
+
+body, html {
+  margin: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+  font-family: 'Hanken Grotesk', sans-serif;
+  overflow-x: clip;
+  box-sizing: border-box; }
+
+body {
+  background: #7a8085; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+.yellow-section {
+  background: #fbc651;
+  width: 100%;
+  height: 500px;
+  margin-top: 50px;
+  padding-top: 30px; }
+
+/*# sourceMappingURL=style.css.map */

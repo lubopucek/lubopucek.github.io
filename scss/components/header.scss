@@ -1,0 +1,218 @@
+.container-small {
+    display: flex;
+    margin: auto;
+    max-width: 1500px;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+
+header {
+    width: 100%;
+    // background-color: blue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px $yellow-2 solid;
+    margin-bottom: 50px;
+}
+
+.logo {
+    padding-left: 0px;
+    white-space: nowrap;
+
+    h1 {
+        color: $yellow-1;
+        letter-spacing: 7px;
+        font-size: 1.8rem;
+
+        @media (max-width: $md) {
+            letter-spacing: 5px;
+            font-size: 1.2rem;
+        }
+    }
+
+    span {
+        color: $white;
+        letter-spacing: 5px;
+        font-weight: 500;
+
+        @media (max-width: $md) {
+            letter-spacing: 4px;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+// MENU - THE BEGINNING
+// https://www.youtube.com/watch?v=vb_u7mj84Tc
+// 19:00
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding-right: 0px;
+}
+
+.menu > .menu-item {
+    display: inline-block;
+    position: relative;
+    margin-left: 35px;
+}
+
+.menu > .menu-item > a {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: $white;
+}
+
+.menu > .menu-item > a:hover {
+    color: $yellow-2
+}
+
+.open-nav-menu {
+    display: none;
+    height: 34px;
+    width: 40px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.open-nav-menu span {
+    position: relative;
+    display: block;
+    height: 3px;
+    width: 29px;
+    background-color: $white;
+    transition: all 0.3s ease;
+}
+
+.open-nav-menu span:hover {
+    background: $yellow-2;
+}
+
+.open-nav-menu span:before,
+.open-nav-menu span:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.open-nav-menu span:before {
+    top: -10px;
+}
+.open-nav-menu span:after {
+    top: 10px;
+}
+
+.open-nav-menu span:hover:before,
+.open-nav-menu span:hover:after {
+    background: $yellow-2;
+}
+
+.close-nav-menu {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: none;
+    margin-left: 42px;
+}
+
+.close-icon {
+    margin-left: 17px;
+    margin-top: 2px;
+}
+
+  .close-icon:before, .close-icon:after {
+    position: absolute;
+    content: ' ';
+    height: 35px;
+    width: 4px;
+    background: $violet-1;
+    transition: all 0.3s ease;
+  }
+
+  .close-icon:before {
+    transform: rotate(45deg);
+  }
+  .close-icon:after {
+    transform: rotate(-45deg);
+  }
+
+  .close-icon:hover:before, .close-icon:hover:after {
+    background: $white;
+  }
+  
+//  
+
+.menu-overlay {
+    position: fixed;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.5);
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.menu-overlay.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: $lg) {
+    .nav-menu {
+        display: block;
+        position: fixed;
+        right: -280px;
+        visibility: hidden;
+        width: 280px;
+        top: 0;
+        overflow-y: auto;
+        z-index: 1000;
+        padding: 15px 0;
+        background-color: $yellow-2;
+        transition: all 0.3s ease;
+    }
+
+    .nav-menu.open {
+        visibility: visible;
+        right: 0;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .menu > .menu-item {
+        display: block;
+        padding: 7px;
+        margin: 0;
+    }
+
+    .menu > .menu-item > a {
+        color: $violet-1;
+    }
+
+    .menu > .menu-item > a:hover {
+        color: $white;
+    }
+
+    .open-nav-menu,
+    .close-nav-menu {
+        display: flex;
+    }
+}
+
+// MENU - THE END
