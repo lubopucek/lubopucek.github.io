@@ -1,42 +1,124 @@
+// .hero {
+//     display: flex;
+//     width: 100%;
+//     flex-direction: column;
+//     justify-content: center;
+//     // background: $violet-1;
+//     text-align: center;
+
+// }
+
+// .hero__title {
+//     color: $yellow-2;
+//     margin-bottom: 10px;
+//     letter-spacing: 1.5px;
+// }
+
+// p {
+//     color: $white;
+//     font-size: 1.3rem;
+//     font-weight: 400;
+//     letter-spacing: 1.5px;
+// }
+
+
+// =========================================================================
+// Hero
+// =========================================================================
+
+// Block
+//--------------------------------------------------------------------------
+
 .hero {
+    position: relative;
     display: flex;
     flex-direction: column;
+}
+
+// Elements
+//--------------------------------------------------------------------------
+
+.hero__content {
+    // height: 100%;
+    // display: flex;
+    // z-index: 2;
+    // align-items: flex-start;
+    // flex-direction: column;
+    // justify-content: center;
+    // position: relative;
+    // gap: 10px;
+    // max-width: 480px;
+    // margin-top: 20px;
+
+    height: 100%;
+    display: flex;
+    z-index: 2;
+    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
-    margin: auto;
-    // background: $violet-1;
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
+    position: absolute;
+    gap: 10px;
+    max-width: 480px;
 
-    /* ff 3.6+ */
-    background:-moz-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%); 
+    @media (min-width: $md) {
+         position: absolute;
+         margin-top: 0;
+    }
 
-    /* safari 5.1+,chrome 10+ */
-    background:-webkit-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
+    & h1 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
 
-    /* opera 11.10+ */
-    background:-o-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
+        @media (min-width: $md) {
+            font-size: 3rem;
+            line-height: 52px;
+            color: $black-1;
+        }
+    }
 
-    /* ie 6-9 */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee82ee', endColorstr='#6C00FF', GradientType=0 );
+    & p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        color: $white;
 
-    /* ie 10+ */
-    background:-ms-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
-
-    /* global 94%+ browsers support */
-    background:linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
-
+        @media (min-width: $md) {
+            font-size: 20px;
+            line-height: 30px;
+            padding-top: 10px;
+            color: $black-1;
+        }
+    }
 }
 
-.hero__title {
-    color: $yellow-2;
-    margin-bottom: 10px;
-    letter-spacing: 1.5px;
+.hero__main {
+    order: 1;
+
+    @media (max-width: $md) {
+        order: 1;
+    }
 }
 
-p {
-    color: $white;
-    font-size: 1.3rem;
-    font-weight: 400;
-    letter-spacing: 1.5px;
+.hero__bg {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    // background-color: rgba(34,42,51,.65);
+    background-image: linear-gradient(to left, rgba(34,42,51,0), rgba(34,42,51,1));
+    order: 1;
+
+    & img {
+        width: 100%;
+        max-height: 640px;
+        object-fit: cover;
+        mix-blend-mode: darken;
+        margin-bottom: -5px;
+    }
+
+    @media (max-width: $md) {
+        order: 2;
+    }
 }

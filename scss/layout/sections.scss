@@ -2,6 +2,28 @@
     background: $yellow-2;
     width: 100%;
     height: 500px;
-    margin-top: 50px;
     padding-top: 30px;
+}
+
+.violet-section {
+    width: 100%;
+    padding: 30px;
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee82ee', endColorstr='#6C00FF', GradientType=0 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(90deg, #6C00FF 1%, #6C00FF6B 100%, #EE82EE 100%);
 }
