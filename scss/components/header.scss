@@ -14,6 +14,9 @@ header {
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: 2px $yellow-2 solid;
+    position: fixed;
+    z-index: 10;
+    background: $gray-1;
 }
 
 .logo {
@@ -23,16 +26,17 @@ header {
     h1 {
         color: $white;
         letter-spacing: 7px;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        font-weight: 800;
 
         @media (max-width: $md) {
             letter-spacing: 5px;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
 
     span {
-        color: $white;
+        color: $yellow-2;
         letter-spacing: 5px;
         font-weight: 500;
 
@@ -64,6 +68,7 @@ header {
     text-decoration: none;
     transition: all 0.3s ease;
     color: $white;
+    font-weight: 600;
 }
 
 .menu > .menu-item > a:hover {
