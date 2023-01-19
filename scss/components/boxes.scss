@@ -1,0 +1,91 @@
+// Boxes
+
+.boxes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  
+    @media (min-width: $sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: $md) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: gray;
+    text-decoration: none;
+
+    &:hover { 
+        & .box__image img {
+            transform: scale(1.05);
+            transition: .2s;
+        }
+    }
+}
+
+.box__image {
+    height: 194px;
+    width: 100%;
+    overflow: clip;
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+    
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;           
+        transform: scale(1);
+        transition: .2s;
+    }
+}
+// .box__marker {
+//     position: absolute;
+//     top: 8px;
+//     left: 8px;
+//     height: 40px;
+//     width: 40px;
+//     border-radius: 40px;
+//     background: cyan;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     color: white;
+//     font-size: 20px;
+// }
+
+.box__content {
+    min-height: 92px;
+    background: white;  
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.box__title {
+    font-size: 22px;
+    color: blue($color: #000000);
+    padding: 16px 20px 6px;
+}
+
+.box__info {
+    padding: 0px 20px 10px;
+    color: gray;
+    font-size: 17px;
+}
+
+// PERSON BOX
+
+.box--person {
+    & .box__image {
+        height: 292px;
+    }
+
+    & .box__content {
+        min-height: 118px;
+    }
+}

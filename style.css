@@ -257,6 +257,61 @@ header {
     .hero__bg {
       order: 2; } }
 
+.boxes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px; }
+  @media (min-width: 576px) {
+    .boxes-grid {
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 768px) {
+    .boxes-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr; } }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: gray;
+  text-decoration: none; }
+  .box:hover .box__image img {
+    transform: scale(1.05);
+    transition: .2s; }
+
+.box__image {
+  height: 194px;
+  width: 100%;
+  overflow: clip;
+  position: relative;
+  border-radius: 15px 15px 0px 0px; }
+  .box__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: .2s; }
+
+.box__content {
+  min-height: 92px;
+  background: white;
+  width: 100%;
+  border-radius: 0px 0px 15px 15px; }
+
+.box__title {
+  font-size: 22px;
+  color: 0;
+  padding: 16px 20px 6px; }
+
+.box__info {
+  padding: 0px 20px 10px;
+  color: gray;
+  font-size: 17px; }
+
+.box--person .box__image {
+  height: 292px; }
+.box--person .box__content {
+  min-height: 118px; }
+
 .content h1 {
   font-size: 2rem;
   letter-spacing: 2px;
