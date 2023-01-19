@@ -200,7 +200,7 @@ header {
       max-width: 1200px; } }
   .hero__content h1 {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 24px;
     color: #fff; }
     @media (min-width: 768px) {
@@ -209,13 +209,17 @@ header {
         line-height: 52px; } }
   .hero__content p {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 0.9rem;
+    line-height: 16px;
     color: #fff;
     text-align: center; }
+    @media (min-width: 576px) {
+      .hero__content p {
+        font-size: 1rem;
+        line-height: 18px; } }
     @media (min-width: 768px) {
       .hero__content p {
-        font-size: 25px;
+        font-size: 1.5rem;
         line-height: 33px;
         padding-top: 0px; } }
   .hero__content .hero__line {
@@ -260,12 +264,12 @@ header {
   margin-bottom: 10px; }
 .content p {
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #000; }
   @media (min-width: 768px) {
     .content p {
       font-size: 1.2rem;
-      font-weight: 700; } }
+      font-weight: 500; } }
 
 body, html {
   margin: 0;

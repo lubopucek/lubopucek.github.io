@@ -71,7 +71,7 @@
 
     & h1 {
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         line-height: 24px;
         color: $white;
 
@@ -83,19 +83,28 @@
 
     & p {
         font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 0.9rem;
+        line-height: 16px;
         color: $white;
         text-align: center;
 
+        @media (min-width: $sm) {
+            font-size: 1rem;
+            line-height: 18px;
+        }
+
         @media (min-width: $md) {
-            font-size: 25px;
+            font-size: 1.5rem;
             line-height: 33px;
             padding-top: 0px;
         }
     }
 
     .hero__line {
+        // width: 100px;
+        // height: 3px;
+        // border: 0;
+        // background: $violet-1;
         display: none;
 
         @media (min-width: $md) {
