@@ -61,28 +61,46 @@
 
 .box__content {
     min-height: 92px;
-    background: white;  
+    background: $violet-1;  
     width: 100%;
     border-radius: 0px 0px 15px 15px;
+    padding-bottom: 10px;
 }
 
 .box__title {
     font-size: 22px;
-    color: blue($color: #000000);
+    color: $yellow-2;
     padding: 16px 20px 6px;
 }
 
 .box__info {
     padding: 0px 20px 10px;
-    color: gray;
+    color: $white;
     font-size: 17px;
+}
+
+.box__labels {
+    margin: 10px 18px 10px 18px;
+    display: flex;
+}
+
+.box__label {
+    color: $white;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    border: 2px solid $white;
+    padding: 5px 10px;
+    width: fit-content;
 }
 
 // PERSON BOX
 
 .box--person {
     & .box__image {
-        height: 292px;
+        height: 200px;
     }
 
     & .box__content {
