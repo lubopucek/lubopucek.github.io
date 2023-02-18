@@ -279,7 +279,10 @@ header {
   flex-direction: column;
   align-items: flex-start;
   box-shadow: gray;
-  text-decoration: none; }
+  text-decoration: none;
+  overflow: hidden;
+  border-radius: 15px 15px 0px 0px;
+  -webkit-mask-image: -webkit-radial-gradient(white, black); }
   .box:hover .box__image img {
     transform: scale(1.05);
     transition: .2s; }
@@ -287,9 +290,8 @@ header {
 .box__image {
   height: 194px;
   width: 100%;
-  overflow: clip;
+  overflow: hidden;
   position: relative;
-  border-radius: 15px 15px 0px 0px;
   background-image: linear-gradient(to left, rgba(34, 42, 51, 0), #222a33); }
   .box__image img {
     width: 100%;
@@ -304,7 +306,8 @@ header {
   background: #6c00ff;
   width: 100%;
   border-radius: 0px 0px 15px 15px;
-  padding-bottom: 13px; }
+  padding-bottom: 13px;
+  z-index: 5; }
 
 .box__title {
   font-size: 22px;
@@ -423,13 +426,13 @@ p {
   background: #fbc651;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 35px; }
 
 .gray-section {
   background: #7a8085;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-bottom: 35px; }
 
 .violet-section {
   width: 100%;

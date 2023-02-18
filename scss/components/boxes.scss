@@ -27,6 +27,9 @@
     align-items: flex-start;
     box-shadow: gray;
     text-decoration: none;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-mask-image: -webkit-radial-gradient(white, black); 
 
     &:hover { 
         & .box__image img {
@@ -39,9 +42,8 @@
 .box__image {
     height: 194px;
     width: 100%;
-    overflow: clip;
+    overflow: hidden;
     position: relative;
-    border-radius: 15px 15px 0px 0px;
     background-image: linear-gradient(to left, rgba(34,42,51,0), rgba(34,42,51,1));
     
     & img {
@@ -74,6 +76,7 @@
     width: 100%;
     border-radius: 0px 0px 15px 15px;
     padding-bottom: 13px;
+    z-index: 5;
 }
 
 .box__title {
