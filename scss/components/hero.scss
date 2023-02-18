@@ -89,7 +89,7 @@
         text-align: center;
 
         @media (min-width: $sm) {
-            font-size: 1rem;
+            font-size: 1.2rem;
             line-height: 18px;
         }
 
@@ -101,11 +101,11 @@
     }
 
     .hero__line {
-        // width: 100px;
-        // height: 3px;
-        // border: 0;
-        // background: $violet-1;
-        display: none;
+        width: 100px;
+        height: 3px;
+        border: 0;
+        background: $violet-1;
+        // display: none;
 
         @media (min-width: $md) {
             display: block;

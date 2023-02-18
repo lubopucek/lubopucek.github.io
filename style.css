@@ -215,7 +215,7 @@ header {
     text-align: center; }
     @media (min-width: 576px) {
       .hero__content p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 18px; } }
     @media (min-width: 768px) {
       .hero__content p {
@@ -223,7 +223,10 @@ header {
         line-height: 33px;
         padding-top: 0px; } }
   .hero__content .hero__line {
-    display: none; }
+    width: 100px;
+    height: 3px;
+    border: 0;
+    background: #6c00ff; }
     @media (min-width: 768px) {
       .hero__content .hero__line {
         display: block;
@@ -348,7 +351,8 @@ header {
 .content .content-text--violet {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #6c00ff; }
+  color: #6c00ff;
+  padding-bottom: 12.5px; }
   @media (min-width: 768px) {
     .content .content-text--violet {
       font-size: 1.2rem;
@@ -365,7 +369,8 @@ header {
 .content .content-text--white {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 12.5px; }
   @media (min-width: 768px) {
     .content .content-text--white {
       font-size: 1.2rem;
@@ -426,13 +431,13 @@ p {
   background: #fbc651;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 35px; }
+  padding-bottom: 32.5px; }
 
 .gray-section {
   background: #7a8085;
   width: 100%;
   padding-top: 30px;
-  padding-bottom: 35px; }
+  padding-bottom: 32.5px; }
 
 .violet-section {
   width: 100%;
