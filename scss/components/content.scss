@@ -1,20 +1,66 @@
 .content {
 
-    & h1 {
+    .content-title--violet {
         font-size: 2rem;
         letter-spacing: 2px;
         color: $violet-1;
         margin-bottom: 20px;
     }
 
-    & p {
+    .content-text--violet {
         font-size: 1.1rem;
         font-weight: 500;
-        color: $black-1;
+        color: $violet-1;
 
         @media (min-width: $md) {
             font-size: 1.2rem;
             font-weight: 500;
         }
+
+        & a {
+            font-weight: 600;
+        }
+
+        & span {
+            font-weight: 800;
+        }
     }
+
+    .content-title--white {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        color: $white;
+        margin-bottom: 20px;
+    }
+
+    .content-text--white {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: $white;
+
+        @media (min-width: $md) {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        & a {
+            color: $yellow-2;
+            font-weight: 600;
+        }
+
+        & span {
+            color: $yellow-2;
+            font-weight: 600;
+        }
+    }
+}
+
+.content-photo-text {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.content-photo {
+    width: 150px;
 }

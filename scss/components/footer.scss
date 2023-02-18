@@ -1,0 +1,12 @@
+footer {
+    background: $violet-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+    & p {
+        color: $white;
+        font-size: 16px;
+    }
+}

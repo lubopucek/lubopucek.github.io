@@ -83,7 +83,7 @@
 
     & p {
         font-weight: 400;
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 16px;
         color: $white;
         text-align: center;
@@ -139,7 +139,7 @@
 
     & img {
         width: 100%;
-        max-height: 500px;
+        max-height: 300px;
         object-fit: cover;
         mix-blend-mode: darken;
         margin-bottom: -5px;
