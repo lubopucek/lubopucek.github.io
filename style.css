@@ -51,7 +51,7 @@ header {
   text-decoration: none;
   transition: all 0.3s ease;
   color: #fff;
-  font-weight: 600; }
+  font-weight: 700; }
 
 .menu > .menu-item > a:hover {
   color: #fbc651; }
@@ -377,7 +377,12 @@ header {
 .content-photo-text {
   display: flex;
   gap: 30px;
-  align-items: center; }
+  align-items: start;
+  flex-direction: column; }
+  @media (min-width: 576px) {
+    .content-photo-text {
+      flex-direction: row;
+      align-items: center; } }
 
 .content-photo {
   width: 150px; }
@@ -400,7 +405,8 @@ body, html {
   height: 100%;
   font-family: 'Hanken Grotesk', sans-serif;
   overflow-x: clip;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  scroll-padding-top: 70px; }
 
 body {
   background: #7a8085; }

@@ -58,7 +58,13 @@
 .content-photo-text {
     display: flex;
     gap: 30px;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
+
+    @media (min-width: $sm) {
+        flex-direction: row;
+        align-items: center;
+      }
 }
 
 .content-photo {
