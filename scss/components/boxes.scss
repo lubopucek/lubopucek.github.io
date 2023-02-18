@@ -11,6 +11,7 @@
     grid-template-columns: 1fr;
     justify-content: space-between;
     gap: 30px;
+    margin-bottom: 15px;
   
     @media (min-width: $sm) {
       grid-template-columns: 1fr 1fr;

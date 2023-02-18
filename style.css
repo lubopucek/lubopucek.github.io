@@ -269,7 +269,8 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: space-between;
-  gap: 30px; }
+  gap: 30px;
+  margin-bottom: 15px; }
   @media (min-width: 576px) {
     .boxes-grid {
       grid-template-columns: 1fr 1fr; } }
